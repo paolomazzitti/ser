@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div h3 {
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
+hr {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    width: 50% ;
+    border-top: 1px solid rgba(150, 150, 150, 0.5);
+}
+
+.colonna {
+    display: flex;
+    height: 100%;
+}
+
+.colonna_b1 {
+    display: flex;
+    flex-direction: column;
+    color: #252525;
+    flex: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #efebda;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.colonna_b1_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colonna_b1_pic {
+    margin: 2vh 0;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+}
+
+.colonna_b1_title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.colonna_b1_subtitle {
+    padding: 0 2vw;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 1vh;
+}
+
+.colonna_b1_tab_con{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.colonna_b1_tab{
+    margin-bottom: 20px;
+    border: 2px solid #252525;
+    padding: 5px 10px;
+    width: 50%;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.colonna_b1_tab a {
+    text-decoration: none;
+    color: rgba(37, 37, 37, 0.95);
+}
+
+.colonna_b1_tab a:hover {
+    color: rgba(37, 37, 37, 0.7);
+}
+
+.colonna_b1_tab a:hover {
+    color: rgba(37, 37, 37, 0.7);
+}
+
+.colonna_b1_contacts a {
+    margin: 0.6em;
+}
+
+.colonna_b1_contacts a p {
+    font-size: 1.2em;
+    color: #252525;
+}
+
+.colonna_b2 {
+    padding: 2vw;
+    max-height: 1000px;
+    overflow: scroll;
+    display: flex;
+    flex: 60%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.colonna_b2 img{
+    width: 20%;
+}
+
+@media screen and (max-width: 600px){
+
+    .colonna {
+        display: block;
+    }
+
+    .colonna_b1 {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 10vw;
+        color: #252525;
+        font-family: 'Work Sans', sans-serif;
+        background-color: #efebda;
+    }
+
+    .colonna_b1_card{
+        margin: 5vh 0;
+    }
+
+    .colonna_b1_pic {
+        margin-bottom: 2vh;
+        border-radius: 50%;
+        width: 30vw;
+        height: auto;
+    }
+
+    .colonna_b1_education{
+        margin: 3vh 0;
+    }
+
+    .colonna_b1_skills{
+        margin: 3vh 0;
+    }
+
+    .colonna_b1_education p {
+        margin-block-start: 0.1em;
+        margin-block-end: 0;
+        font-size: 0.9em;
+    }
+
+    p.colonna_b1_thesis {
+        font-size: 0.6em;
+        font-style: italic;
+    }
+
+}
